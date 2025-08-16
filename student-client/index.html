@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Student Client - Google OAuth2 PKCE</title>
+</head>
+<body>
+    <h1>Student Management</h1>
+    
+    <div>
+        <button id="login">Log In with Google</button>
+        <button id="logout" style="display:none;">Log Out</button>
+        <span id="user"></span>
+    </div>
+    <hr/>
+
+    <section id="actions" style="display:none;">
+        <h2>Add Student</h2>
+        <label>ID <input id="sid" /></label>
+        <label>Name <input id="sname" /></label>
+        <label>Age <input id="sage" type="number" min="0" /></label>
+        <button id="add">POST /students</button>
+
+        <h2>List Students</h2>
+        <button id="list">GET /students</button>
+        <pre id="out"></pre>
+    </section>
+
+    <script src="pkce.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>
